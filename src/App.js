@@ -1,24 +1,34 @@
 import React from 'react';
-import logo from './logo.svg';
+import Portfolio from './Components/Portfolio'
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import Presentation from './Components/Presentation';
+import Chat from './Components/Chat';
 import './App.css';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className='portfolio'>Portfolio</div>
+        <div className ='section'>
+         <Router>
+           <div className= 'menu'>
+             <li>
+               <Link to = "/"> Portfolio</Link>
+             </li>
+             <li>
+               <Link to ="/presentation">Presentation</Link>
+             </li>
+             <li>
+                 <Link to ="/chat">ChatBot</Link>
+             </li>
+           </div>
+             <Route exact path="/" component={Portfolio} />
+             <Route path="/presentation" component={Presentation} />
+             <Route path="/chat" component={Chat}/>
+         </Router>
+         <div className='picture'></div>
+       </div>
     </div>
   );
 }

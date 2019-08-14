@@ -1,33 +1,73 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.portfolio{
+  width: 5%;
+  background-color: black;
   color: white;
+  text-align: center;
+  writing-mode: vertical-rl;
+  margin-left: 5%;
+  height: 40%;
+  font-size: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.section{
+  background-color: black;
+  display: flex;
+  width: 1070px;
+  height: 700px;
+  position: absolute;
+  top: 10%;
+  left: 9%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.me , .presentation{
+  margin-top: 15%;
+  margin-left: 16%;
+  color: white;
+  font-size: 20px;
 }
+
+.picture {
+  background-image: url(/mypic.jpeg);
+  width: 538px;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+}
+.hmg{
+  background-image: url(/list.png);
+  width: 50px;
+  position: absolute;
+  left: 56%;
+  height: 65px;
+  background-repeat: no-repeat;
+}
+.modal-content  {
+  width: 150px;
+  margin-top: -20%;
+  position: absolute;
+  display: flex;
+  list-style-type: none;
+  letter-spacing: 6px;
+}
+
+li{
+ 
+   color :white;
+   writing-mode: vertical-rl;
+   list-style-type: none; 
+   height: 25%;
+   text-align: center;
+
+}
+
+.menu{
+  background-color: blue;
+  width: 3%;
+  padding-left: 10px;
+}
+
